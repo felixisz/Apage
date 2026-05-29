@@ -1,0 +1,15 @@
+# Python 相关（如果你的 .py 文件是本地生成数据用的，不需要部署）
+*.pyc
+__pycache__/
+
+# 本地运行脚本（不需要部署）, 已生成了 env.js
+run.sh
+
+# 编辑器或系统文件
+.DS_Store
+.vscode/
+.idea/
+
+# EDA 和第三方包
+node_modules/
+protocols/

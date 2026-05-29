@@ -1,0 +1,178 @@
+{
+  "animation": true,
+  "animationThreshold": 2000,
+  "animationDuration": 1000,
+  "animationEasing": "cubicOut",
+  "animationDelay": 0,
+  "animationDurationUpdate": 300,
+  "animationEasingUpdate": "cubicOut",
+  "animationDelayUpdate": 0,
+  "aria": {
+    "enabled": false
+  },
+  "series": [
+    {
+      "type": "line",
+      "name": "\u5e73\u5747\u5e74\u72af\u7f6a\u7387",
+      "connectNulls": false,
+      "xAxisIndex": 0,
+      "symbolSize": 4,
+      "showSymbol": true,
+      "smooth": false,
+      "clip": true,
+      "step": false,
+      "stackStrategy": "samesign",
+      "data": [],
+      "hoverAnimation": true,
+      "label": {
+        "show": false,
+        "margin": 8,
+        "richInheritPlainLabel": true,
+        "valueAnimation": false
+      },
+      "logBase": 10,
+      "seriesLayoutBy": "column",
+      "lineStyle": {
+        "show": true
+      },
+      "areaStyle": {
+        "opacity": 0
+      },
+      "zlevel": 0,
+      "z": 0
+    }
+  ],
+  "legend": [
+    {
+      "data": [
+        "\u5e73\u5747\u5e74\u72af\u7f6a\u7387"
+      ],
+      "selected": {},
+      "show": false,
+      "padding": 5,
+      "itemGap": 10,
+      "itemWidth": 25,
+      "itemHeight": 14,
+      "backgroundColor": "transparent",
+      "borderColor": "#ccc",
+      "borderRadius": 0,
+      "pageButtonItemGap": 5,
+      "pageButtonPosition": "end",
+      "pageFormatter": "{current}/{total}",
+      "pageIconColor": "#2f4554",
+      "pageIconInactiveColor": "#aaa",
+      "pageIconSize": 15,
+      "animationDurationUpdate": 800,
+      "selector": false,
+      "selectorPosition": "auto",
+      "selectorItemGap": 7,
+      "selectorButtonGap": 10,
+      "triggerEvent": false
+    }
+  ],
+  "tooltip": {
+    "show": true,
+    "trigger": "item",
+    "triggerOn": "mousemove|click",
+    "axisPointer": {
+      "type": "line"
+    },
+    "showContent": true,
+    "alwaysShowContent": false,
+    "showDelay": 0,
+    "hideDelay": 100,
+    "enterable": false,
+    "confine": false,
+    "appendToBody": false,
+    "transitionDuration": 0.4,
+    "displayTransition": true,
+    "textStyle": {
+      "fontSize": 14,
+      "richInheritPlainLabel": true
+    },
+    "borderWidth": 0,
+    "padding": 5,
+    "order": "seriesAsc"
+  },
+  "xAxis": [
+    {
+      "name": "\u5e74\u4efd",
+      "show": true,
+      "scale": false,
+      "nameLocation": "end",
+      "nameGap": 15,
+      "nameTruncate": {},
+      "nameMoveOverlap": true,
+      "inverse": false,
+      "offset": 0,
+      "splitNumber": 5,
+      "min": 1975,
+      "max": 2000,
+      "minInterval": 0,
+      "silent": false,
+      "triggerEvent": false,
+      "splitLine": {
+        "show": true,
+        "lineStyle": {
+          "show": false
+        }
+      },
+      "animation": true,
+      "animationThreshold": 2000,
+      "animationDuration": 1000,
+      "animationEasing": "cubicOut",
+      "animationDelay": 0,
+      "animationDurationUpdate": 300,
+      "animationEasingUpdate": "cubicOut",
+      "animationDelayUpdate": 0,
+      "data": []
+    }
+  ],
+  "yAxis": [
+    {
+      "name": "\u72af\u7f6a\u7387\u6570\u91cf",
+      "show": true,
+      "scale": false,
+      "nameLocation": "end",
+      "nameGap": 15,
+      "nameTruncate": {},
+      "nameMoveOverlap": true,
+      "inverse": false,
+      "offset": 0,
+      "splitNumber": 5,
+      "min": 300,
+      "minInterval": 0,
+      "silent": false,
+      "triggerEvent": false,
+      "splitLine": {
+        "show": true,
+        "lineStyle": {
+          "show": false
+        }
+      },
+      "animation": true,
+      "animationThreshold": 2000,
+      "animationDuration": 1000,
+      "animationEasing": "cubicOut",
+      "animationDelay": 0,
+      "animationDurationUpdate": 300,
+      "animationEasingUpdate": "cubicOut",
+      "animationDelayUpdate": 0,
+      "data": []
+    }
+  ],
+  "title": [
+    {
+      "show": true,
+      "text": "\u5168\u7f8e\u5e73\u5747\u72af\u7f6a\u7387",
+      "target": "blank",
+      "subtext": "second try",
+      "subtarget": "blank",
+      "padding": 5,
+      "itemGap": 10,
+      "textAlign": "auto",
+      "textVerticalAlign": "auto",
+      "triggerEvent": false
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的仪表板</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义样式 -->
+    <link href="static/css.css" rel="stylesheet">
+    <!-- ECharts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+    <!-- Markdown 解析器, 解析左侧的说明文字 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</head>
+<body>
+    <!-- 动态导航栏占位 -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- 左侧：Markdown 文档 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        项目说明
+                    </div>
+                    <div class="card-body markdown-body" id="markdown-content">
+                        <p class="text-muted">正在加载说明文档...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧：图表/表格区域 -->
+            <div class="col-md-8">
+                <!-- 使用 Bootstrap Tab 组件切换视图 -->
+                <ul class="nav nav-tabs mb-3" id="viewTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-target="chart" type="button" role="tab">📈 图表</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-target="table" type="button" role="tab">📋 表格</button>
+                    </li>
+                </ul>
+
+                <!-- 图表选择下拉菜单（仅图表模式下显示） -->
+                <div class="selector-area chart-selector">
+                    <label class="form-label fw-bold">选择图表：</label>
+                    <select class="form-select" id="chart-selector">
+                        <option value="">加载中...</option>
+                    </select>
+                </div>
+
+                <!-- 表格选择下拉菜单（仅表格模式下显示） -->
+                <div class="selector-area table-selector" style="display:none;">
+                    <label class="form-label fw-bold">选择表格：</label>
+                    <select class="form-select" id="table-selector">
+                        <option value="">加载中...</option>
+                    </select>
+                </div>
+
+                <!-- 图表容器 -->
+                <div id="chart" style="width:100%; height:500px;"></div>
+                <!-- 表格容器 -->
+                <div id="table-container" style="display:none;">
+                    <h5>数据表格</h5>
+                    <table class="table table-striped table-bordered" id="data-table">
+                        <thead><tr><th>类别</th><th>数值</th></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="common.js"></script>
+    <script src="env.js"></script> <!-- 导入 sh 单独的环境变量 -->
+    <script src="app.js"></script>
+</body>
+</html>
